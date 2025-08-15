@@ -10,7 +10,7 @@ module top;
 			req |-> ##1 clk;  // or req |=> gnt;
 	endproperty
 
-	HANDSHAKE: assert(p1);
+	HANDSHAKE: assert property(p1);
 
 	initial begin
 		req = 0;
